@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 1px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .lbl {
+            
+            display: inline-block;
+            width: 250px;
+        }
+        .lbl5{
+            
+            display: inline-block;
+            width: 250px;
+        }
+        .lbl1 {
+            
+           
+            display: table-cell;
+            margin: 5px 0px;
+
+        }
+        .lbl2{
+            vertical-align: middle;
+            display: inline-block;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="border: 1px solid black;">
+    <form action="result.html" method="get">
+        <h1>ABC Tasarim Programi Kurulum ve Satis Sozlesmesi</h1>
+        <div>
+            <fieldset>
+                <legend>Sozlesme Onay</legend>
+                <input type="checkbox" name="onay" id="confirm">
+                <label for="confirm">Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sozlesmeyi onayliyorum. </label>
+                <br>
+                <input type="submit" value="Formu Kaydet">
+                <input type="reset" value="Formu Temizle">
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Kisisel bilgiler</legend>
+                <label class="lbl" for="number">Form Guvenlik ID</label>
+                <input type="text" name="secID" id="number" value="asdfg" disabled>
+                <br>
+                <label class="lbl" for="name">Ad</label>
+                <input type="text" name="name" id="name">
+                <br>
+                <label class="lbl" for="sname">Surname</label>
+                <input type="text" name="surname" id="sname">
+                <br>
+                <label class="lbl" for="age">Age</label>
+                <input type="text" name="age" id="age">
+                <br>
+                <label class="lbl" for="mail">Mail Adresi</label>
+                <input type="email" name="email" id="mail">
+                <br>
+                <label class="lbl" for="img">Fotograf Ekle</label>
+                <input type="file" name="image" id="img">
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Diger Bilgiler</legend>
+                <h3>Buradaki alanlar mesleki deneyimi kapsar</h3>
+                <label class="lbl" for="date">Sektore Giris Tarihi</label>
+                <input type="date" name="date" id="date">
+                <div class="lbl1">
+                    <div class="lbl5"><label for="experience">Sektor Deneyimi</label></div>
+                    <div class="lbl2">
+                        <input type="radio" name="experience" id="experience1" value="1-5">
+                        <label for="experience1">1-5 yil</label>
+                        <br>
+                        <input type="radio" name="experience" id="experience2" value="6-10">
+                        <label for="experience2">6-10 yil</label>
+                        <br>
+                        <input type="radio" name="experience" id="experience3" value="11-15">
+                        <label for="experience3">11-15 yil</label>
+                        <br>
+                        <input type="radio" name="experience" id="experience4" value="15-uzeri">
+                        <label for="experience4">15 uzeri</label>
+                    </div>
+                </div>
+                <div>
+                    <label class="lbl" for="language">Programlama Dilleri</label>
+                    <select class="lbl2" name="knownLanguage" id="language" size="5">
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="JS">JS</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Sozlesme Kopyasi</legend>
+                <textarea name="agreement" id="agr" cols="30"
+                    rows="10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati debitis voluptatem, neque laborum minima veniam dolores nobis quos, ipsam repellat harum quis adipisci optio ratione eum nostrum doloribus consequatur fugit!</textarea>
+            </fieldset>
+        </div>
+        <div class="posta">
+            <fieldset>
+                <legend>Mail Listesi</legend>
+                <label for="yes">Mail listesine katilmak <b>istiyorum</b></label>
+                <input type="radio" name="membership" id="yes">
+                <br>
+                <label for="no">Mail listesine katilmak <ins><b>istemiyorum</b></ins> </label>
+                <input type="radio" name="membership" id="no">
+            </fieldset>
+        </div>
+    </form>
+</body>
+
+</html>
